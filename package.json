@@ -10,12 +10,16 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@testing-library/user-event": "^14.5.2",
+    "add": "^2.0.6",
     "next": "14.2.12",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
     "@types/node": "^20",
     "@types/react": "^18",
@@ -23,9 +27,12 @@
     "@vitejs/plugin-react": "^4.3.1",
     "eslint": "^8",
     "eslint-config-next": "14.2.12",
+    "jsdom": "^25.0.0",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5",
-    "vitest": "^2.1.1"
+    "vite-tsconfig-paths": "^5.0.1",
+    "vitest": "^2.1.1",
+    "vitest-fail-on-console": "^0.7.1"
   }
 }
