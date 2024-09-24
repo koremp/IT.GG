@@ -47,10 +47,17 @@ export default function BaseResumePage() {
         Educations
         Languages
         Licenses/Awards/Certifications
+        <div>
+          datetime
+          desc
+        </div>
       </div>
       {/*  */}
       <div>
         Self Introduction
+      </div>
+      <div>
+        attachment files
       </div>
     </div>
   );
