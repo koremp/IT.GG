@@ -12,16 +12,14 @@ export default function ResumePage() {
         <ul>
           {
             sites.map((site: ISite) => (
-              <Link href={site.href} key={site.name}>
+              <Link href={'/resume/' + site.href} key={site.name}>
                 <li>
                   {site.name}
                 </li>
               </Link>
             ))
-
           }
         </ul>
-
       </div>
     </div>
   );
