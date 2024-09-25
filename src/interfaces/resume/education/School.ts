@@ -1,4 +1,4 @@
-import { Duration } from '@/interfaces/resume/Duration';
+import { Duration } from '@/interfaces/types/Duration';
 import { Graduations } from '@/interfaces/types/Graduations';
 import { HighSchoolMajors } from '@/interfaces/types/HighSchoolMajors';
 import { Regions } from '@/interfaces/types/Regions';
