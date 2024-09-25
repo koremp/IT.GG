@@ -1,8 +1,8 @@
-const UniversityTypes = [
-  'JuniorCollege',
-  'University',
-  'Master',
-  'Doctor',
-] as const;
+const UniversityTypes = {
+  JuniorCollege: 'JuniorCollege',
+  University: 'University',
+  Master: 'Master',
+  Doctor: 'Doctor',
+} as const;
 
-export type UniversityTypes = typeof UniversityTypes[number];
+export type UniversityTypes = typeof UniversityTypes[keyof typeof UniversityTypes];

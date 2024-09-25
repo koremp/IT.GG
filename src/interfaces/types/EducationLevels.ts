@@ -1,6 +1,9 @@
-const EducationLevels = [
-  'Elementary', 'Middle', 'High', 'University',
-] as const;
+const EducationLevels = {
+  ElementarySchool: 'Elementary',
+  MiddleSchool: 'Middle',
+  HighSchool: 'High',
+  University: 'University',
+} as const;
 
-export type EducationLevels = typeof EducationLevels[number];
+export type EducationLevels = typeof EducationLevels[keyof typeof EducationLevels];
 
