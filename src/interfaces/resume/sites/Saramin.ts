@@ -3,5 +3,5 @@ import { Education } from "@/interfaces/resume/education";
 
 export interface Saramin {
   education: Education;
-  company: Company;
+  companies: Array<Company>;
 }
