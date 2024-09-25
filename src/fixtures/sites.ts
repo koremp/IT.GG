@@ -1,4 +1,4 @@
-import { ISite } from "@/interfaces/ISite";
+import { ISite } from "@/interfaces/resume/sites/ISite";
 
 const sites: Array<ISite> = [
   {
