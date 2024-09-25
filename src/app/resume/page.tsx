@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { ISite } from '@/interfaces/ISite';
+import { ISite } from '@/interfaces/resume/sites/ISite';
 import { sites } from '@/fixtures/sites';
 
 export default function ResumePage() {
