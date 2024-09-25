@@ -1,7 +1,7 @@
 import { Duration } from '@/interfaces/types/Duration';
 import { Regions } from '@/interfaces/types/Regions';
 
-export interface Career {
+export interface Company {
   name: string;
   isInOffice: boolean;
   duration: Duration;
