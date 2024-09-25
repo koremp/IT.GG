@@ -23,7 +23,7 @@ const Regions = [
   'Oceania',
   'Africa',
   'Atalantica',
-  'Etcetera'
+  'Etcetera',
 ] as const;
 
 export type Regions = typeof Regions[number];
