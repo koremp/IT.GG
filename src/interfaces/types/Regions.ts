@@ -26,4 +26,4 @@ const Regions = {
   Etcetera: 'Etcetera',
 } as const;
 
-export type Regions = typeof Regions[number];
+export type Regions = typeof Regions[keyof typeof Regions];
