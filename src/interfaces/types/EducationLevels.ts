@@ -1,5 +1,5 @@
 const EducationLevels = [
-  'Elementary', 'Middle', 'High', 'Bachelor', 'Master', 'Doctor',
+  'Elementary', 'Middle', 'High', 'University',
 ] as const;
 
 export type EducationLevels = typeof EducationLevels[number];
