@@ -1,4 +1,4 @@
-const Regions = {
+const KoreanRegions = {
   Seoul: 'Seoul',
   Gyeonggi: 'Gyeonggi',
   Gwangju: 'Gwangju',
@@ -17,6 +17,11 @@ const Regions = {
   Gangwon: 'Gangwon',
   RepublicOfKorea: 'RepublicOfKorea',
   Sejong: 'Sejong',
+};
+
+export type KoreanRegions = typeof KoreanRegions[keyof typeof KoreanRegions];
+
+const ForeignRegions = {
   Asia: 'Asia', MiddleEast: 'MiddleEast',
   NorthAmerica: 'NorthAmerica', MiddleAmerica: 'MiddleAmerica',
   SouthAmerica: 'SouthAmerica',
@@ -26,4 +31,7 @@ const Regions = {
   Etcetera: 'Etcetera',
 } as const;
 
+export type ForeignRegions = typeof ForeignRegions[keyof typeof ForeignRegions];
+
+const Regions = { ...KoreanRegions, ...ForeignRegions };
 export type Regions = typeof Regions[keyof typeof Regions];
