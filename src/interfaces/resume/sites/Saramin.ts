@@ -37,14 +37,6 @@ export interface Saramin {
   suggestion?: Suggestion;
 };
 
-// export type Education = '초등학교'|
-//   '중학교'|
-//   '초등학교'|
-//   '고등학교'|
-//   '대학교(2,3년)'|
-//   '대학교(4년)'|
-//   '대학원(석사)'|
-//   '대학원(박사)';
 
 export interface SaraminURL {
   isFreshman: boolean;
