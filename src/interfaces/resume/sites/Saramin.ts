@@ -9,6 +9,10 @@ import { Award } from '@/interfaces/resume/license/Award';
 import { HireSupport } from "../hireSupport";
 import { ArmyDuties } from "@/interfaces/types/ArmyDuty";
 
+export type Suggestion = ''|
+  ''|
+  '';
+
 export interface Saramin {
   education: Education;
   experiences: Array<Experience>;
@@ -30,9 +34,7 @@ export interface Saramin {
     armyDuty?: ArmyDuties;
     hireSupport?: HireSupport;
   };
-  suggestion?: {
-
-  };
+  suggestion?: Suggestion;
 };
 
 export type Education = '초등학교'|
@@ -43,12 +45,6 @@ export type Education = '초등학교'|
   '대학교(4년)'|
   '대학원(석사)'|
   '대학원(박사)';
-
-export type Suggestion = ''|
-  ''|
-  '';
-
-
 export interface SaraminURL {
   isFreshman: boolean;
   url: {
@@ -59,8 +55,6 @@ export interface SaraminURL {
   education: Education;
   experience?: Date; // when isFreshman is true, experience is not undefined
   suggestion: Suggestion;
-
-
 };
 
 export interface SaraminFile {
